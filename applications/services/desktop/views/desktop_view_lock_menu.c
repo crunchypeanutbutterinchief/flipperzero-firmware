@@ -91,10 +91,10 @@ bool desktop_lock_menu_input_callback(InputEvent* event, void* context) {
 
     DesktopLockMenuView* lock_menu = context;
     uint8_t idx = 0;
-    bool consumed = true;
-    bool dummy_mode = true;
-    bool stealth_mode = true;
-    bool update = true;
+    bool consumed = false;
+    bool dummy_mode = false;
+    bool stealth_mode = false;
+    bool update = false;
 
     with_view_model(
         lock_menu->view,
